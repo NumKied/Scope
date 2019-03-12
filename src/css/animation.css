@@ -1,0 +1,207 @@
+@keyframes hookSpanLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(0px);
+  }
+  76% {
+    transform: translateX(-9px);
+  }
+  77.5% {
+    transform: translateX(-13px);
+  }
+  90% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes hookSpanRight {
+  0% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(0px);
+  }
+  76% {
+    transform: translateX(7px);
+  }
+  77.5% {
+    transform: translateX(11px);
+  }
+  90% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  9% {
+    transform: scale(1);
+  }
+  12% {
+    transform: scale(1.1);
+  }
+  15% {
+    transform: scale(0.9);
+  }
+  18% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1);
+  }
+  36% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.9)
+  }
+  42% {
+    transform: scale(1);
+  }
+  57% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  63% {
+    transform: scale(0.9)
+  }
+  66% {
+    transform: scale(1);
+  }
+  78% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes iconChange {
+  0% {
+    content: url(../img/lampSVG.svg);
+    opacity: 0;
+  }
+  6% {
+    opacity: 0.5;
+  }
+  9% {
+    transform: scale(1);
+  }
+  12% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+  15% {
+    transform: scale(0.7);
+  }
+  18% {
+    transform: scale(1);
+    opacity: 0.5;
+    content: url(../img/lampSVG.svg);
+  }
+  24% {
+    opacity: 0;
+  }
+
+  30% {
+    content: url(../img/bookSVG.svg);
+    opacity: 0.5;
+  }
+  33% {
+    transform: scale(1);
+  }
+  36% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  39% {
+    transform: scale(0.7)
+  }
+  42% {
+    transform: scale(1);
+    opacity: 0.5;
+    content: url(../img/bookSVG.svg);
+  }
+  48% {
+    opacity: 0;
+  }
+
+  54% {
+    content: url(../img/pen.svg);
+    opacity: 0.5;
+  }
+  57% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  63% {
+    transform: scale(0.7)
+  }
+  66% {
+    transform: scale(1);
+    opacity: 0.5;
+    content: url(../img/pen.svg);
+  }
+  72% {
+    opacity: 0;
+  }
+
+  78% {
+    content: url(../img/vortex.svg);
+    opacity: 0.5;
+    transform: rotate(0deg);
+  }
+  84% {
+    opacity: 1;
+  }
+  90% {
+    transform: rotate(360deg);
+  }
+  96% {
+    opacity: 1;
+  }
+  100% {
+    content: url(../img/vortex.svg);
+    opacity: 0.5;  
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  90% {
+    transform: scale3d(1, 1, 1);
+  }
+  91.5% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  93% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  94.5% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  96% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  97.5% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}

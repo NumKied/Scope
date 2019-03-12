@@ -1,0 +1,128 @@
+header {
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.header-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hideHeader {
+  transform: translateY(-100%);
+}
+
+.logo {
+  font-family: 'Diodrum';
+  font-size: 60px;
+  margin-top: -10px;
+  color: #182978;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  animation: rubberBand 11s linear infinite;
+}
+
+.logo span:nth-child(1) {
+  animation: hookSpanLeft 11s linear infinite;
+}
+
+.logo span:nth-child(3) {
+  animation: hookSpanRight 11s linear infinite;
+}
+
+.logo .Ofolder {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 2px 4px 4px;
+}
+
+.logo .Ofolder img {
+  height: inherit;
+  animation: rotate 11s linear infinite;
+}
+
+.logo .Ofolder span {
+  animation: iconChange 11s linear infinite;
+  content: url(../img/lampSVG.svg);
+  height: 20px;
+  position: absolute;
+}
+
+.sidebar-open {
+  width: 20px;
+  height: 20px;
+  transition: 0.5s;
+}
+
+.sidebar-open span, .sidebar-open span::before, .sidebar-open span::after {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #182978;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.sidebar-open span::before, .sidebar-open span::after {
+  content: '';
+  display: block;
+  transition: 0.5s;
+}
+
+.sidebar-open span::before {
+  transform: translateY(-6px);
+}
+
+.sidebar-open span::after {
+  transform: translateY(6px);
+}
+
+.activeBurgerButton {
+  transition: 0.2s;
+}
+
+.activeBurgerButton span::before {
+  transform: rotate(45deg);
+}
+
+.activeBurgerButton span {
+  height: 0;
+}
+
+.activeBurgerButton span::after {
+  transform: rotate(-45deg);
+}
+
+.sidebar-open:hover {
+  cursor: pointer;
+}
+
+.header-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Big John';
+  font-size: 25px;
+  color: #6688CC;
+}
+
+.header-menu ul li {
+  margin-right: 25px;
+}
+
+.header-menu ul li:hover {
+  cursor: pointer;
+}
