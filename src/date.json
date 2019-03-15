@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "avatar": "https://avatars3.githubusercontent.com/u/42978736?s=460&v=4",
+    "author": "Nazarii Kravchuck",
+    "postDate": "March 10 - 18:00",
+    "timeReading": "10min",
+    "background": "https://static1.visitestonia.com/images/2890339/Estonian_forest_reasons_to_visit_Sven_Zacek.jpg",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, provident!",
+    "likesCounter": 10,
+    "viewsCounter": 143
+  },
+  {
+    "id": 2,
+    "avatar": "https://avatars3.githubusercontent.com/u/17730501?s=400&v=4",
+    "author": "Vitalik Melnyk",
+    "postDate": "March 15 - 10:39",
+    "timeReading": "16min",
+    "background": "https://www.forestryengland.uk/sites/default/files/styles/forest_slide_wide_desk/public/media/woodland3.jpg?h=78566fdd&itok=HXeDhGX0",
+    "title": "Lorem ipsum dolor sit amet!",
+    "likesCounter": 23,
+    "viewsCounter": 211
+  }
+]

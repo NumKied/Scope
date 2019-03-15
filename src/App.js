@@ -31,6 +31,12 @@ class App extends Component {
       </BrowserRouter>
     );    
   }
+  componentDidMount() {
+    setTimeout(function () {
+      var preloader = document.getElementsByClassName('preloader');
+      preloader[0].classList.add('hidePreloader');   
+    }, 1000);
+  }
 }
 
 export default App;
