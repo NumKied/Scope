@@ -205,8 +205,12 @@
   cursor: pointer;
 }
 
-.likeAnimation {
-  animation: hitLike 2s linear 1 forwards;
+.likeAnimation-empty {
+  animation: hitLikeEmpty 0.4s linear 1 forwards;
+}
+
+.likeAnimation-full {
+  animation: hitLikeFull 0.4s linear 1 forwards;
 }
 
 .postViews {

@@ -10,8 +10,8 @@ import './css/App.css';
 import './css/animation.css';
 import './css/sidebar.css';
 import './css/header.css';
-import './fonts/fontawesome-pro-5.2.0-web/css/all.min.css';
 import './css/media.css';
+import './fonts/fontawesome-pro-5.2.0-web/css/all.min.css';
 
 
 
