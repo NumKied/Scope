@@ -61,19 +61,19 @@ header {
 }
 
 .sidebar-open {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   transition: 0.5s;
 }
 
 .sidebar-open span, .sidebar-open span::before, .sidebar-open span::after {
   position: absolute;
   display: block;
-  width: 25px;
-  height: 2px;
+  width: 40px;
+  height: 4px;
   background-color: #182978;
   top: 50%;
-  margin-top: -1px;
+  margin-top: -2px;
 }
 
 .sidebar-open span::before, .sidebar-open span::after {
@@ -83,11 +83,11 @@ header {
 }
 
 .sidebar-open span::before {
-  transform: translateY(-6px);
+  transform: translateY(-10px);
 }
 
 .sidebar-open span::after {
-  transform: translateY(6px);
+  transform: translateY(10px);
 }
 
 .activeBurgerButton {

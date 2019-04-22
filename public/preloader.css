@@ -1,0 +1,38 @@
+@keyframes rotateLoader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  visibility: visible;
+}
+
+.loader {
+  width: 75px;
+  height: 75px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  border-top-color: #182978;
+  animation: rotateLoader 1s infinite linear;
+}
+
+.hidePreloader {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}

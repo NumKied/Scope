@@ -236,11 +236,27 @@
   }
 }
 
-@keyframes rotateLoader {
+@keyframes addNewGroup {
   0% {
-    transform: rotate(0deg);
+    transform: translateZ(0) scale(1, 1);
+  }
+  50% {
+    transform: translateZ(0) scale(1.2, 1.2);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translateZ(0) scale(1, 1);
   }
 }
+
+@keyframes addNewGroup2 {
+  0% {
+    transform: translateZ(0) scale(1, 1);
+  }
+  50% {
+    transform: translateZ(0) scale(1.2, 1.2);
+  }
+  100% {
+    transform: translateZ(0) scale(1, 1);
+  }
+}
+

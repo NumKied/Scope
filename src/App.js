@@ -5,15 +5,16 @@ import {AboutUs} from './components/aboutUs';
 import {WrongPath} from './components/wrongPath';
 import {Header} from './components/header';
 import {Sidebar} from './components/sidebar';
+import {AddLinks} from './components/addLinks';
 import './css/reset.css';
 import './css/App.css';
 import './css/animation.css';
 import './css/sidebar.css';
 import './css/header.css';
+import './css/home.css';
+import './css/addLinks.css';
 import './css/media.css';
 import './fonts/fontawesome-pro-5.2.0-web/css/all.min.css';
-
-
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
           <Sidebar/>
           <Switch>
             <Route path="/aboutUs" component={AboutUs}/>
+            <Route path="/addLinks" component={AddLinks}/>
             <Route exact path="/" component={Home}/>
             <Route component={WrongPath}/>
           </Switch>
@@ -35,7 +37,7 @@ class App extends Component {
     setTimeout(function () {
       var preloader = document.getElementsByClassName('preloader');
       preloader[0].classList.add('hidePreloader');   
-    }, 1000);
+    }, 500);
   }
 }
 

@@ -1,0 +1,204 @@
+.links {
+  height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.addLinks {
+  height: 100%;
+  width: 100%;
+  background-color: #aeaeae;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* filter: blur(4px);
+  transition: 0.3s;
+  pointer-events: none; */
+}
+
+.addLinks-noneActive {
+  filter: blur(4px);
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.addLinks .wrapper {
+  position: relative;
+}
+
+.openedGroup {
+  display: none;
+  position: absolute;
+  width: 90%;
+  height: calc(90% - 100px);
+  z-index: 4;
+  background-color: #182978;
+}
+
+.openedGroup-active {
+  display: block;
+}
+
+.group {
+  width: 50%;
+  height: 50px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.groupName {
+  color: #182978;
+  font-family: 'Space Grotesk SemiBold';
+  font-size: 30px;
+}
+
+.newGroup {
+  height: 40px;
+  position: absolute;
+  right: 0;
+  margin-top: 15px;
+}
+
+.newGroup-noneActive {
+  display: none;
+}
+
+.addNewGroup {
+  height: inherit;
+  cursor: pointer;
+}
+
+.addNewGroup-click {
+  animation: addNewGroup 0.3s linear 1 forwards;
+}
+
+.addNewGroup-click2 {
+  animation: addNewGroup2 0.3s linear 1 forwards;
+}
+
+.newGroup-dropdown {
+  height: 100px;
+  width: 300px;
+  background-color: #6688CC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  transform: translateX(-280px) scale(0, 0);
+  opacity: 0;
+  transform-origin: right top;
+  transition: 0.3s;
+}
+
+.newGroup-dropdown-active {
+  opacity: 1;
+  transform: translateX(-280px) scale(1, 1);
+  transition: 0.3s;
+}
+
+.addName {
+  display: flex;
+  width: 100%;
+}
+
+.addNameBtn {
+  width: 15%;
+  height: 100%;
+  border: none;
+  background-color: #182978;
+  color: #fff;
+  font-family: 'Space Grotesk SemiBold';
+  cursor: pointer;
+  outline: none;
+}
+
+.nameEnter {
+  width: 85%;
+  height: 25px;
+  border: none;
+  outline: none;
+  color: #6688CC;
+  padding-left: 5px;
+  font-family: 'Space Grotesk SemiBold';
+  font-size: 15px;
+}
+
+.nameEnter::placeholder {
+  color: #6688CC;
+  font-family: 'Space Grotesk SemiBold';
+  font-size: 15px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.newGroup span {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Big John';
+  color: #182978;
+}
+
+.groupColor {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.red, .blue, .green, .yellow {
+  width: 25%;
+  height: 100%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.redContent, .greenContent, .blueContent, .yellowContent {
+  width: 100%;
+  height: 100%;
+}
+
+.redContent {
+  background-color: #DB2B39;
+  display: flex;
+  justify-content: center;
+}
+
+.greenContent {
+  background-color: #27FB6B;
+  display: flex;
+  justify-content: center;
+}
+
+.blueContent {
+  background-color: #29B6E9;
+  display: flex;
+  justify-content: center;
+}
+
+.yellowContent {
+  background-color: #F1D302;
+  display: flex;
+  justify-content: center;
+}
+
+.unCheckedColor {
+  height: inherit;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.checkedColor {
+  opacity: 1;
+  height: inherit;
+  transition: 0.2s;
+}

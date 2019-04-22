@@ -116,7 +116,7 @@
 }
 
 .sidebar-menu ul li a::after {
-  width: 85%;
+  width: 90%;
   content: '';
   position: absolute;
   right: 0;
